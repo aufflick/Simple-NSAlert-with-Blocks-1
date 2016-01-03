@@ -19,9 +19,9 @@ extern "C" {
 	
 typedef void (^OAAlertSheetCompletionHandler)(NSAlert *alert, NSInteger returnCode);
 
-@interface NSAlert (OAExtensions)
-- (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(OAAlertSheetCompletionHandler)completionHandler;
-@end
+//@interface NSAlert (OAExtensions)
+//- (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(OAAlertSheetCompletionHandler)completionHandler;
+//@end
 
 // Runs an NSAlert with an optional completion block. The returnCode passed to the block is based on the NSAlertFirstButtonReturn+N convention.
 extern void OABeginAlertSheet(NSString *title, NSString *defaultButton, NSString *alternateButton, NSString *otherButton, NSWindow *docWindow, OAAlertSheetCompletionHandler completionHandler, NSString *msgFormat, ...);
